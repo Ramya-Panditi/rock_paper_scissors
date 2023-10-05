@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors</title>
+    <style>
+        .container{
+            margin: auto;
+            display: block;
+            width: 25%;
+            
+        }
+        .img-container img{
+            height: 100px;
+        }
+        .moves{
+            display: flex;
+            justify-content: center;
+            gap: 3vw;
+            text-align: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="moves">
+            <h2>Computer's move: <img id="comp"></h2>
+            <h2>User's move: <img id="user"></h2>
+
+        </div>
+         <div class="img-container">
+             <img src="paper-removebg-preview.png" alt="" id = "paper" onclick="move('paper')">
+             <img src="rock-removebg-preview.png" alt="" id = "rock" onclick="move('rock')">
+             <img src="scissors-removebg-preview.png" alt="" id ="scissors" onclick="move('scissors')">
+             <h2 style="text-align: center;" id ="res">Pick one</h2>
+         </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
